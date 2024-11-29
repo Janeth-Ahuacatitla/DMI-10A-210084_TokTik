@@ -6,7 +6,6 @@ import 'package:toktik_210084/shared/data/local_video_posts.dart';
 class DiscoverProvider extends ChangeNotifier {
   bool initialLoading = true;
   List<VideoPost> videos = [];
-
   Future<void> loadNextPage() async {
     //todo: cargar videos
     await Future.delayed(const Duration(seconds: 2));
