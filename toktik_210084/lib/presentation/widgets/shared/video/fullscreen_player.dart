@@ -86,6 +86,30 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
 
       },
     );
+<<<<<<< HEAD
+  }
+}
+
+
+class _VideoCaption extends StatelessWidget {
+
+  final String caption;
+
+
+  const _VideoCaption({super.key, required this.caption });
+
+  @override
+  Widget build(BuildContext context) {
+
+    final size = MediaQuery.of(context).size;
+    final titleStyle = Theme.of(context).textTheme.titleLarge;
+
+    return SizedBox(
+      width: size.width * 0.6,
+      child: Text( caption, maxLines: 2, style: titleStyle ),
+    );
+=======
+>>>>>>> ebc50cbcc911517178ff265ae236d4361bce61b1
   }
 }
 
@@ -109,3 +133,23 @@ class _VideoCaption extends StatelessWidget {
     );
   }
 }
+
+// import 'package:flutter/material.dart';
+
+// class FullscreenPlayer extends StatelessWidget{
+//   final String videoUrl;
+//   final String caption;
+
+//   const FullscreenPlayer({
+//     super.key,
+//     required
+//     this.videoUrl,
+//     required this.caption});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     // TODO: implement build
+//     return const Placeholder();
+//   }
+  
+// }
